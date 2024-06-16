@@ -19,76 +19,99 @@
     <title>Frontend Mentor | Chat App CSS Illustration</title>
   </head>
   <body>
-    <section aria-labelledby="simple-booking-title">
-      <h1 id="simple-booking-title">Simple booking</h1>
-      <p>
-        Stay in touch with our dog walkers through the chat interface. This
-        makes it easy to discuss arrangements and make bookings. Once the walk
-        has been completed you can rate your walker and book again all through
-        the chat.
-      </p>
-    </section>
-    <section class="phone" aria-labelledby="chat-app-title">
-      <h2 class="visually-hidden" id="chat-app-title"></h2>
-      <div class="loader"></div>
-      <img
-        src="./icons/phone-notch.svg"
-        alt=""
-        role="presentation"
-        class="phone__notch--position"
-      />
-      <div class="phone__header">
-        <button aria-label="Go back to the overview page">
-          <img src="./icons/left-arrow.svg" alt="" role="presentation" />
-        </button>
-        <img src="./images/avatar.jpg" alt="Avatar of Samuel Green" />
-        <em>Samuel Green</em>
-        <span>Available to Walk</span>
-        <button aria-label="Select more options">
-          <img src="./icons/kebab-menu.svg" alt="" role="presentation" />
-        </button>
-      </div>
-      <div class="phone__body">
-        <p class="phone__message phone__message--walker">
-          That sounds great. I’d be happy with that.
+    <main>
+      <section aria-labelledby="simple-booking-title" role="region">
+        <h1 id="simple-booking-title">Simple booking</h1>
+        <p>
+          Stay in touch with our dog walkers through the chat interface. This
+          makes it easy to discuss arrangements and make bookings. Once the walk
+          has been completed you can rate your walker and book again all through
+          the chat.
         </p>
-        <p class="phone__message phone__message--walker">
-          Could you send over some pictures of your dog, please?
-        </p>
-        <div>
-          <img src="./images/dog-image-1.jpg" alt="Dog smiling" />
-          <img src="./images/dog-image-2.jpg" alt="Dog resting on the floor" />
-          <img src="./images/dog-image-3.jpg" alt="Dog carrying a twig" />
-        </div>
-        <p class="phone__message phone__message--owner">
-          Here are a few pictures. She’s a happy girl!
-        </p>
-        <p class="phone__message phone__message--owner">Can you make it?</p>
-        <p class="phone__message phone__message--walker">
-          She looks so happy! The time we discussed works. How long shall I take
-          her out for?
-        </p>
-        <div class="phone__message phone__message--cost">
-          <img src="./icons/circle.svg" alt="" role="presentation" />
-          <span>30 minute walk</span>
-          <em>$29</em>
-        </div>
-        <div class="phone__message phone__message--cost">
-          <img src="./icons/circle.svg" alt="" role="presentation" />
-          <span>1 hour walk</span>
-          <em>$49</em>
-        </div>
-      </div>
-      <div class="phone__footer">
-        <input
-          type="text"
-          placeholder="Type a message…"
-          aria-label="Type a message"
+      </section>
+      <section class="phone" aria-labelledby="chat-app-title" role="region">
+        <h2 class="visually-hidden" id="chat-app-title"></h2>
+        <div class="loader"></div>
+        <img
+          src="./icons/phone-notch.svg"
+          alt=""
+          role="presentation"
+          class="phone__notch--position"
         />
-        <button aria-label="Send a message">
-          <img src="./icons/right-arrow.svg" alt="" role="presentation" />
-        </button>
-      </div>
-    </section>
+        <div class="phone__header">
+          <button aria-label="Go back to the overview page">
+            <img src="./icons/left-arrow.svg" alt="" role="presentation" />
+          </button>
+          <img src="./images/avatar.jpg" alt="Avatar of Samuel Green" />
+          <em>Samuel Green</em>
+          <span>Available to Walk</span>
+          <button aria-label="Select more options">
+            <img
+              width="2"
+              height="8"
+              src="./icons/kebab-menu.svg"
+              alt=""
+              role="presentation"
+            />
+          </button>
+        </div>
+        <div class="phone__body">
+          <p class="phone__message phone__message--walker">
+            That sounds great. I’d be happy with that.
+          </p>
+          <p class="phone__message phone__message--walker">
+            Could you send over some pictures of your dog, please?
+          </p>
+          <div>
+            <img src="./images/dog-image-1.jpg" alt="Dog smiling" />
+            <img
+              src="./images/dog-image-2.jpg"
+              alt="Dog resting on the floor"
+            />
+            <img src="./images/dog-image-3.jpg" alt="Dog carrying a twig" />
+          </div>
+          <p class="phone__message phone__message--owner">
+            Here are a few pictures. She’s a happy girl!
+          </p>
+          <p class="phone__message phone__message--owner">Can you make it?</p>
+          <p class="phone__message phone__message--walker">
+            She looks so happy! The time we discussed works. How long shall I
+            take her out for?
+          </p>
+          <div class="phone__message phone__message--cost">
+            <img
+              width="12"
+              height="12"
+              src="./icons/circle.svg"
+              alt=""
+              role="presentation"
+            />
+            <span>30 minute walk</span>
+            <em>$29</em>
+          </div>
+          <div class="phone__message phone__message--cost">
+            <img
+              width="12"
+              height="12"
+              src="./icons/circle.svg"
+              alt=""
+              role="presentation"
+            />
+            <span>1 hour walk</span>
+            <em>$49</em>
+          </div>
+        </div>
+        <div class="phone__footer">
+          <input
+            type="text"
+            placeholder="Type a message…"
+            aria-label="Type a message"
+          />
+          <button aria-label="Send a message">
+            <img src="./icons/right-arrow.svg" alt="" role="presentation" />
+          </button>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
