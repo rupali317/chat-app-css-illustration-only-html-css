@@ -1,4 +1,4 @@
-/* Global definitions */
+/********************* Global definitions ********************************/
 :root {
   /* Colors */
   --color-primary-1: hsl(271, 36%, 24%); /* #3E2753 */
@@ -108,11 +108,79 @@
   font-style: normal;
   font-display: swap;
 }
+/******************************************************************************/
 
-/* CSS resets */
+/***************************** CSS resets *************************************/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-/* Main stylings */
+* {
+  margin: 0;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-block-end: 0;
+  padding-block-start: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+input,
+button {
+  line-height: 1.1;
+}
+
+/* Avoid text overflows */
+h1,
+h2,
+p {
+  overflow-wrap: break-word;
+}
+
+/* Remove built-in form typography styles */
+input,
+button {
+  font: inherit;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+svg {
+  max-width: 100%;
+  display: block;
+}
+/******************************************************************************/
+
+/**************************** Main stylings ***********************************/
 body {
   font-family: "Rubik";
   font-weight: var(--font-weight-regular);
 }
+/******************************************************************************/
