@@ -185,6 +185,9 @@ body {
   line-height: var(--line-height-normal);
   padding: var(--space-xl-2) var(--space-xl-1);
   background-color: var(--color-neutral-4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
