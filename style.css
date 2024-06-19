@@ -277,37 +277,73 @@ h1 {
 .phone__body {
   display: flex;
   flex-direction: column;
-  gap: var(--space-s-1);
+  gap: var(--space-m-2);
   padding: var(--space-base-1) var(--space-xs-3) var(--space-m-2); /* 11px 7.5px 16px */
 }
 
 .phone__message {
   font-size: var(--font-size-xs);
   line-height: var(--line-height-base);
-  padding: var(--space-xs-2) var(--space-s-1);
+  display: flex;
+  gap: var(--space-s-1);
+  flex-direction: column;
 }
 
 .phone__message--walker {
+  align-items: flex-start;
+}
+
+.phone__message--owner {
+  align-items: flex-end;
+}
+
+.phone__message--walker p {
   color: var(--color-primary-6);
   background-color: var(--color-primary-5);
   border-radius: var(--border-radius-s) var(--border-radius-s)
     var(--border-radius-s) var(--border-radius-xxs); /* 10px 10px 10px 4px */
   max-width: 8rem; /* 128px */
+  padding: var(--space-xs-2) var(--space-s-1);
+  align-items: flex-start;
 }
 
-.phone__message--owner {
+.phone__message--owner p {
   color: var(--color-neutral-3);
   background-color: var(--color-neutral-2);
   box-shadow: var(--box-shadow-2);
   border-radius: var(--border-radius-s) var(--border-radius-s)
     var(--border-radius-xxs) var(--border-radius-s); /* 10px 10px 4px 10px */
   max-width: 8rem; /* 128px */
+  padding: var(--space-xs-2) var(--space-s-1);
+  justify-content: right;
 }
 
 .phone__message--images {
   display: flex;
   justify-content: right;
   gap: var(--space-s-1);
+}
+
+.phone__message--cost {
+  max-width: 10rem; /* 160px */
+  display: grid;
+  color: var(--color-neutral-2);
+  grid-template-columns: 0.75rem 5.25rem 1.5rem; /* 12px 84px 24px */
+  grid-column-gap: var(--space-s-1);
+  border-radius: var(--border-radius-s) var(--border-radius-s)
+    var(--border-radius-s) var(--border-radius-xxs); /* 10px 10px 10px 4px */
+  background: linear-gradient(
+    346deg,
+    var(--color-primary-8),
+    var(--color-primary-7)
+  );
+  padding: var(--space-s-3) var(--space-m-2) var(--space-s-3) var(--space-s-1); /* 10px 16px 10px 8px*/
+}
+
+.phone__message--cost em {
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-bold);
+  font-style: normal;
 }
 
 .phone__message--images img {
