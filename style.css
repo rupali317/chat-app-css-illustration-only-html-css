@@ -272,6 +272,39 @@ h1 {
   padding: var(--space-l-3) var(--space-m-3) var(--space-base-2)
     var(--space-m-1); /* 30px 16.5px 12px 15.5px */
   box-shadow: var(--box-shadow-1);
+  min-width: 14.25rem; /* 228px */
+  display: grid;
+  grid-template-areas:
+    "left-icon dog-walker-avatar dog-walker-name three-dots"
+    "left-icon dog-walker-avatar dog-walker-status three-dots";
+  grid-template-columns: 0.25rem 1.5rem 1fr 0.125rem;
+  grid-column-gap: var(--space-s-1);
+  grid-row-gap: var(--space-xxs-1);
+}
+
+.phone__header button:first-child {
+  grid-area: left-icon;
+}
+
+.phone__header img {
+  grid-area: dog-walker-avatar;
+}
+
+.phone__header em {
+  grid-area: dog-walker-name;
+  font-style: normal;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-base);
+}
+
+.phone__header span {
+  grid-area: dog-walker-status;
+  font-size: var(--font-size-xs);
+  color: var(--color-primary-9);
+}
+
+.phone__header button:last-child {
+  grid-area: three-dots;
 }
 
 .phone__body {
@@ -338,6 +371,7 @@ h1 {
     var(--color-primary-7)
   );
   padding: var(--space-s-3) var(--space-m-2) var(--space-s-3) var(--space-s-1); /* 10px 16px 10px 8px*/
+  align-items: center;
 }
 
 .phone__message--cost em {
@@ -353,9 +387,19 @@ h1 {
 
 .phone__notch--position {
   position: absolute;
-  top: -0.0625rem; /* -1px */
+  top: -0.625rem; /* -10px */
   left: 50%;
   transform: translateX(-50%);
+}
+
+.button__icon {
+  background-color: transparent;
+  border: none;
+}
+
+.avatar {
+  border-radius: var(--border-radius-rounded);
+  border: var(--border-width-s) solid var(--color-neutral-2);
 }
 
 /******************************************************************************/
