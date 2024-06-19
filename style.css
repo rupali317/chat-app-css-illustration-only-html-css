@@ -392,6 +392,10 @@ h1 {
   transform: translateX(-50%);
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .button__icon {
   background-color: transparent;
   border: none;
@@ -400,6 +404,39 @@ h1 {
 .avatar {
   border-radius: var(--border-radius-rounded);
   border: var(--border-width-s) solid var(--color-neutral-2);
+}
+
+.phone__footer {
+  margin: var(--space-none) var(--space-xs-3) var(--space-s-3);
+  display: flex;
+  background-color: var(--color-neutral-2);
+  padding: var(--space-xs-1) var(--space-xxs-2) var(--space-xs-1)
+    var(--space-none);
+  border-radius: var(--border-radius-base);
+  justify-content: space-between;
+}
+
+.phone__footer button {
+  background: var(--color-primary-1);
+  width: 1.516875rem; /* 24.27px */
+  height: 1.51375rem; /* 24.22px */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--border-radius-rounded);
+}
+
+input {
+  width: 80%;
+  background: transparent;
+  border: none;
+  padding-left: var(--space-l-1);
+}
+
+input::placeholder {
+  font-size: var(--font-size-s);
+  color: var(--color-neutral-6);
+  letter-spacing: var(--letter-spacing-s);
 }
 
 /******************************************************************************/
