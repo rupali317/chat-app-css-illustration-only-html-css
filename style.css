@@ -209,14 +209,14 @@ main {
 
 .background-1 {
   background-image: url("./icons/background-1.svg");
-  background-position: -20.125rem -31.8125rem; /* -322px -509px */
-  top: 0;
+  background-position: -20.125rem -27.8125rem;
+  bottom: 0;
   left: 0;
 }
 
 .background-2 {
   background-image: url("./icons/background-2.svg");
-  background-position: 20.125rem 31.8125rem; /* 322px 509px */
+  background-position: 20.125rem 31.8125rem;
   bottom: 0;
   right: 0;
 }
