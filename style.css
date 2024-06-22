@@ -203,14 +203,14 @@ main {
 
 .background-1 {
   background-image: url("./icons/background-1.svg");
-  background-position: -20rem -26.8125rem;
+  background-position: -20rem -27.8125rem;
   bottom: 0;
   left: 0;
 }
 
 .background-2 {
   background-image: url("./icons/background-2.svg");
-  background-position: 20.125rem 31.1rem;
+  background-position: 20.125rem 30.6rem;
   bottom: 0;
   right: 0;
 }
@@ -237,6 +237,7 @@ h1 {
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-medium);
   color: var(--color-primary-1);
+  line-height: var(--line-height-normal);
 }
 
 .intro p {
@@ -250,7 +251,7 @@ h1 {
   max-width: 14.375rem; /* 230px */
   max-height: 30.3125rem; /* 485px */
   background-color: var(--color-neutral-5);
-  border-radius: var(--border-radius-l);
+  border-radius: var(--border-radius-m);
   outline: var(--border-width-m) solid var(--color-neutral-2);
   border: var(--border-width-s) solid var(--color-primary-3);
   box-shadow: var(--box-shadow-3);
@@ -398,7 +399,7 @@ button:hover {
   display: flex;
   background-color: var(--color-neutral-2);
   padding: var(--space-xs-1) var(--space-xxs-2) var(--space-xs-1)
-    var(--space-none);
+    var(--space-l-1);
   border-radius: var(--border-radius-base);
   justify-content: space-between;
 }
@@ -417,7 +418,6 @@ input {
   max-width: 80%;
   background: transparent;
   border: none;
-  padding-left: var(--space-l-1);
 }
 
 input::placeholder {
