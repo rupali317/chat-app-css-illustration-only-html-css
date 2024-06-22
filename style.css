@@ -79,11 +79,8 @@
   --space-l-3: 1.875rem; /* 30px */
   --space-xl-1: 2rem; /* 32px */
   --space-xl-2: 4rem; /* 64px */
-  --space-xl-3: 7.8125rem; /* 125px */
-  --space-xl-4: 4.625rem; /* 125px */
-
-  /* Breakpoints */
-  --desktop-width: 80rem; /* 1280px */
+  --space-xl-3: 4.625rem; /* 74px */
+  --space-xl-4: 8.4375rem; /* 135px */
 }
 
 @font-face {
@@ -188,7 +185,7 @@ main {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  gap: var(--space-xl-4);
+  gap: var(--space-xl-3);
 }
 
 .background-1,
@@ -426,4 +423,27 @@ input::placeholder {
   letter-spacing: var(--letter-spacing-s);
 }
 
+@media (min-width: 80rem) {
+  main {
+    flex-direction: row-reverse;
+    gap: var(--space-xl-4);
+  }
+
+  .intro {
+    max-width: 27.8125rem; /* 445px */
+    align-items: flex-start;
+  }
+
+  .intro p {
+    text-align: left;
+  }
+
+  .background-1 {
+    background-position: -9.1rem -9.8rem;
+  }
+
+  .background-2 {
+    background-position: 8.2rem 14.6rem;
+  }
+}
 /******************************************************************************/
