@@ -46,6 +46,7 @@
   --box-shadow-1: 0rem 0rem 0.8125rem 0rem var(--color-primary-4); /* 0px 0px 13px 0px */
   --box-shadow-2: 0rem 0.625rem 0.3125rem -0.3125rem var(--color-primary-2); /* 0px 10px 5px -5px */
   --box-shadow-3: 0rem 1.875rem 3.75rem -0.625rem var(--color-primary-4); /* 0px 30px 60px -10px */
+  --box-shadow-4: 0rem 0rem 0rem 0.625rem var(--color-neutral-2); /* 0px 0px 0px 10px */
 
   /* Border radius */
   --border-radius-none: 0rem;
@@ -304,12 +305,10 @@ h1 {
 
 .phone {
   max-width: 14.375rem; /* 230px */
-  max-height: 30.3125rem; /* 485px */
   background-color: var(--color-neutral-5);
   border-radius: var(--border-radius-m);
-  outline: var(--border-width-m) solid var(--color-neutral-2);
   border: var(--border-width-s) solid var(--color-primary-3);
-  box-shadow: var(--box-shadow-3);
+  box-shadow: var(--box-shadow-4), var(--box-shadow-3);
   position: relative;
 }
 
