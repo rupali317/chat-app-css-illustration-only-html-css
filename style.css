@@ -230,10 +230,13 @@ main {
     var(--color-primary-6) 180deg,
     var(--color-primary-10) 350deg
   );
+  --linear-gradient: linear-gradient(
+    var(--color-neutral-8),
+    var(--color-neutral-8)
+  );
   background: var(--conic-gradient);
   padding: var(--space-l-2);
-  --mask: var(--conic-gradient),
-    linear-gradient(var(--color-neutral-8), var(--color-neutral-8)) content-box;
+  --mask: var(--linear-gradient), var(--linear-gradient) content-box;
   -webkit-mask: var(--mask);
   mask: var(--mask);
   -webkit-mask-composite: source-out;
