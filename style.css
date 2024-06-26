@@ -183,6 +183,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 main {
@@ -254,22 +255,22 @@ main {
 .background-2 {
   position: absolute;
   z-index: -1;
-  width: 31.875rem; /* 510px */
-  height: 63.625rem; /* 1018px  */
   background-repeat: no-repeat;
   background-size: contain;
+  width: 18.75rem; /* 300px */
+  height: 37.5rem; /* 600px */
 }
 
 .background-1 {
   background-image: url("./icons/background-1.svg");
-  background-position: -20rem -27.8125rem;
-  bottom: 0;
+  background-position: -9.5rem -9.5rem;
+  top: 0;
   left: 0;
 }
 
 .background-2 {
   background-image: url("./icons/background-2.svg");
-  background-position: 20.125rem 30.6rem;
+  background-position: 9.5rem 9.5rem;
   bottom: 0;
   right: 0;
 }
