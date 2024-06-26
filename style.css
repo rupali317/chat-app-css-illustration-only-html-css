@@ -499,12 +499,18 @@ input::placeholder {
     text-align: left;
   }
 
+  .background-1,
+  .background-2 {
+    width: 25rem; /* 400px */
+    height: 50rem; /* 800px */
+  }
+
   .background-1 {
-    background-position: -9.1rem -9.8rem;
+    background-position: -7.1rem -13.8rem;
   }
 
   .background-2 {
-    background-position: 8.2rem 14.6rem;
+    background-position: 6.2rem 11.6rem;
   }
 }
 /******************************************************************************/
