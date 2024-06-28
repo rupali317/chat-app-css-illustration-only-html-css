@@ -21,6 +21,8 @@
   --color-neutral-7: hsla(0, 0%, 100%, 0.4); /* #FFFFFF 50% */
   --color-neutral-8: hsl(0, 0%, 0%); /* #000000 */
 
+  --color-focus: hsl(88, 71%, 48%); /* #80D123 */
+
   /* Font sizes */
   --font-size-xs: 0.5rem; /* 8px */
   --font-size-s: 0.5625rem; /* 9px */
@@ -47,6 +49,7 @@
   --box-shadow-2: 0rem 0.625rem 0.3125rem -0.3125rem var(--color-primary-2); /* 0px 10px 5px -5px */
   --box-shadow-3: 0rem 1.875rem 3.75rem -0.625rem var(--color-primary-4); /* 0px 30px 60px -10px */
   --box-shadow-4: 0rem 0rem 0rem 0.625rem var(--color-neutral-2); /* 0px 0px 0px 10px */
+  --box-shadow-5: 0rem 0rem 0rem 0.125rem var(--color-focus); /* 0px 0px 0px 2px */
 
   /* Border radius */
   --border-radius-none: 0rem;
@@ -211,6 +214,11 @@ main {
   color: var(--color-primary-1);
   background-color: var(--color-neutral-7);
   animation: hide-load-wrapper 2s forwards;
+}
+
+:focus-visible {
+  outline: none;
+  box-shadow: var(--box-shadow-5);
 }
 
 @keyframes hide-load-wrapper {
