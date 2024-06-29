@@ -45,7 +45,7 @@
   --letter-spacing-s: -0.004375rem; /* -0.07px */
 
   /* Box shadows */
-  --box-shadow-1: 0rem 0rem 0.8125rem 0rem var(--color-primary-4); /* 0px 0px 13px 0px */
+  --box-shadow-1: 0rem 0rem 0.125rem 0rem var(--color-primary-4); /* 0px 0px 2px 0px */
   --box-shadow-2: 0rem 0.625rem 0.3125rem -0.3125rem var(--color-primary-2); /* 0px 10px 5px -5px */
   --box-shadow-3: 0rem 1.875rem 3.75rem -0.625rem var(--color-primary-4); /* 0px 30px 60px -10px */
   --box-shadow-4: 0rem 0rem 0rem 0.625rem var(--color-neutral-2); /* 0px 0px 0px 10px */
@@ -371,6 +371,8 @@ h1 {
   top: -0.625rem; /* -10px */
   left: 50%;
   transform: translateX(-50%);
+  width: 8.0625rem; /* 129px */
+  height: 1.8125rem; /* 29px */
 }
 
 button:hover {
@@ -386,6 +388,8 @@ button:hover {
   border-radius: var(--border-radius-rounded);
   border: var(--border-width-s) solid var(--color-neutral-2);
   grid-area: dog-walker-avatar;
+  width: 1.5rem; /* 24px */
+  height: 1.5rem; /* 24px */
 }
 
 .phone__body {
@@ -458,6 +462,8 @@ button:hover {
 .phone__message--images img {
   border-radius: var(--border-radius-s);
   box-shadow: var(--box-shadow-2);
+  width: 2.5rem; /* 40px */
+  height: 2.5rem; /* 40px */
 }
 
 .phone__footer {
