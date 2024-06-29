@@ -14,7 +14,7 @@ This is a solution to the [Chat app CSS illustration challenge on Frontend Mento
   - [Built with](#built-with)
   - [Tested with](#tested-with)
   - [What I learned](#what-i-learned)
-  - [Continued development/improvements](#continued-developmentimprovements)
+  - [Continued development / improvements](#continued-development--improvements)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
@@ -71,15 +71,46 @@ Users should be able to:
 
 ### What I learned
 
-I took this opportunity to create all the icons on my own. I have understood the purpose of different tags used while creating the icons
+- I took this opportunity to create all the icons on my own. I have understood the purpose of different SVG tags used while creating the icons.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
+- I implemented the animation of loading, where I utilised CSS animation and mask composite to achieve the loading animation.
+
+```css
+.loader {
+  width: 8rem;
+  aspect-ratio: 1;
+  border-radius: var(--border-radius-rounded);
+  --conic-gradient: conic-gradient(
+    var(--color-primary-8) 0deg,
+    var(--color-primary-6) 180deg,
+    var(--color-primary-10) 350deg
+  );
+  --linear-gradient: linear-gradient(
+    var(--color-neutral-8),
+    var(--color-neutral-8)
+  );
+  background: var(--conic-gradient);
+  padding: var(--space-l-2);
+  --mask: var(--linear-gradient), var(--linear-gradient) content-box;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  -webkit-mask-composite: source-out;
+  mask-composite: subtract;
+  animation: rotate-animation 0.8s infinite;
+}
+
+@keyframes rotate-animation {
+  to {
+    transform: rotate(1turn);
+  }
+}
 ```
 
-### Continued development/improvements
+- Instead of `--mask: var(--linear-gradient), var(--linear-gradient) content-box;`, I cannot write it as a solid color because gradients are treated differently than solid colors in masking. When using gradients, the entire gradient is treated as a mask. This means the mask will affect the alpha (transparency) values of the element. When using a solid color like #000 directly, it might not provide the same effect because solid colors might not always be interpreted as a mask with varying alpha values.
 
-if i were to create a line diagram for left arrow and right arrow, I will use stroke-linejoin=”round”
+### Continued development / improvements
+
+If I were to create a line diagram for left arrow and right arrow, I will use stroke-linejoin=”round”
 
 ### Useful resources
 
