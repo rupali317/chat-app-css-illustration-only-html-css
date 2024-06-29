@@ -507,14 +507,8 @@ input::placeholder {
     text-align: left;
   }
 
-  .background-1,
-  .background-2 {
-    width: 25rem; /* 400px */
-    height: 50rem; /* 800px */
-  }
-
   .background-1 {
-    background-position: -7.1rem -13.8rem;
+    background-position: -6.2rem -11.6rem;
   }
 
   .background-2 {
