@@ -1,22 +1,22 @@
 # Frontend Mentor - Chat app CSS illustration solution
 
-This is a solution to the [Chat app CSS illustration challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Chat app CSS illustration challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY). Frontend Mentor challenges help you improve coding skills by building realistic projects.
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
+- [The challenge](#the-challenge)
+- [Screenshots](#screenshots)
+  - [1. Desktop version](#1-desktop-version)
+  - [2. Mobile version](#2-mobile-version)
+- [PageSpeed Insights results](#pagespeed-insights-results)
+- [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [Tested with](#tested-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
+  - [Continued development/improvements](#continued-developmentimprovements)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -27,22 +27,26 @@ Users should be able to:
 - View the optimal layout for the component depending on their device's screen size
 - **Bonus**: See the chat interface animate on the initial load
 
-### Screenshot
+### Screenshots
 
-![](./screenshot.jpg)
+##### 1. Desktop version
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+![Chat app CSS illustration desktop](./screenshots/Chat-app-css-illustration-desktop.png)
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+##### 2. Mobile version
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+![Chat app CSS illustration mobile](./screenshots/Chat-app-css-illustration-mobile.png)
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+### PageSpeed Insights results
+
+[Mobile version](https://pagespeed.web.dev/analysis/https-rupali317-github-io-chat-app-css-illustration-only-html-css/kkqbd8fd2k?form_factor=mobile)
+
+[Desktop version](https://pagespeed.web.dev/analysis/https-rupali317-github-io-chat-app-css-illustration-only-html-css/kkqbd8fd2k?form_factor=desktop)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Chat app CSS illustration github](https://github.com/rupali317/chat-app-css-illustration-only-html-css)
+- Live Site URL: [Chat app CSS illustration live](https://rupali317.github.io/chat-app-css-illustration-only-html-css/)
 
 ## My process
 
@@ -51,61 +55,38 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
+- CSS grid
+- CSS animation
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- SVGs
+- [Github Pages](https://pages.github.com/) - Allows to host static websites directly from a GitHub repository
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+### Tested with
+
+- Browsers used for testing: Google Chrome, Firefox, Safari, Brave, Microsoft Edge.
+- Devices:
+  - (Real) MacBook Pro (15-inch), Samsung Galaxy A33 5G, Samsung Galaxy S20+, iPad Air 2, MacBook Pro (13-inch).
+  - (Virtual) The mobile and tablet devices mentioned under Chrome's dev console.
+- Screen reader: MacOS VoiceOver.
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+I took this opportunity to create all the icons on my own. I have understood the purpose of different tags used while creating the icons
 
 ```html
 <h1>Some HTML code I'm proud of</h1>
 ```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+### Continued development/improvements
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+if i were to create a line diagram for left arrow and right arrow, I will use stroke-linejoin=”round”
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [CSS tricks - mask composite](https://css-tricks.com/almanac/properties/m/mask-composite/) - This site helped me to grasp the concept of mask composite, which was key in creating the loading impression.
+- [SVG path editor](https://yqnn.github.io/svg-path-editor/) - This site helped me to test the appearance of my SVGs.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Website - [Rupali Roy Choudhury](https://www.linkedin.com/in/rupali-rc/)
+- Frontend Mentor - [@rupali317](https://www.frontendmentor.io/profile/rupali317)
