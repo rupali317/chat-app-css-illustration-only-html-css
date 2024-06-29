@@ -110,7 +110,7 @@ Users should be able to:
 
 ### Continued development / improvements
 
-If I were to create a line diagram for left arrow and right arrow, I will use stroke-linejoin=”round”
+If I were to create a line diagram for left arrow and right arrow, I will use `stroke-linejoin=”round”`
 
 ### Useful resources
 
