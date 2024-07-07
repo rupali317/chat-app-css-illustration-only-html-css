@@ -11,6 +11,7 @@
   --color-primary-8: hsl(264, 100%, 61%); /* #8739FF */
   --color-primary-9: hsl(276, 100%, 81%); /* #D99EFF */
   --color-primary-10: hsla(264, 100%, 61%, 0); /* #8739FF 0% */
+  --color-primary-11: hsl(289, 100%, 72%); /* E472FF */
 
   --color-neutral-1: hsl(270, 5.78%, 46.29%); /* #766F7D */
   --color-neutral-2: hsl(0, 0%, 100%); /* #FFFFFF */
@@ -259,8 +260,8 @@ main {
   }
 }
 
-.background-1,
-.background-2 {
+.background-element-top-left,
+.background-element-bottom-right {
   position: absolute;
   z-index: -1;
   background-repeat: no-repeat;
@@ -269,14 +270,14 @@ main {
   height: 37.5rem; /* 600px */
 }
 
-.background-1 {
+.background-element-top-left {
   background-image: url("./icons/background-1.svg");
   background-position: -9.5rem -9.5rem;
   top: 0;
   left: 0;
 }
 
-.background-2 {
+.background-element-bottom-right {
   background-image: url("./icons/background-2.svg");
   background-position: 9.5rem 9.5rem;
   bottom: 0;
@@ -486,10 +487,19 @@ button:hover {
   border-radius: var(--border-radius-rounded);
 }
 
-input {
+input[type="text"] {
   max-width: 80%;
   background: transparent;
   border: none;
+}
+
+input[type="radio"] {
+  height: var(--space-base-2);
+  width: var(--space-base-2);
+  border-radius: var(--border-radius-rounded);
+  border: var(--border-width-s) solid var(--color-primary-11);
+  appearance: none;
+  cursor: pointer;
 }
 
 input::placeholder {
@@ -513,11 +523,11 @@ input::placeholder {
     text-align: left;
   }
 
-  .background-1 {
+  .background-element-top-left {
     background-position: -6.2rem -11.6rem;
   }
 
-  .background-2 {
+  .background-element-bottom-right {
     background-position: 6.2rem 11.6rem;
   }
 }

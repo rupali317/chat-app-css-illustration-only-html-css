@@ -16,6 +16,7 @@ This is a solution to the [Chat app CSS illustration challenge on Frontend Mento
   - [What I learned](#what-i-learned)
   - [Continued development / improvements](#continued-development--improvements)
   - [Useful resources](#useful-resources)
+- [Acknowledgement](#acknowledgement)
 - [Author](#author)
 
 ## Overview
@@ -116,6 +117,10 @@ If I were to create a line diagram for left arrow and right arrow, I will use `s
 
 - [CSS tricks - mask composite](https://css-tricks.com/almanac/properties/m/mask-composite/) - This site helped me to grasp the concept of mask composite, which was key in creating the loading impression.
 - [SVG path editor](https://yqnn.github.io/svg-path-editor/) - This site helped me to test the appearance of my SVGs.
+
+## Acknowledgement
+
+I express my gratitude towards my mentor - Deborah for the insightful code review session and for suggesting improvements
 
 ## Author
 
